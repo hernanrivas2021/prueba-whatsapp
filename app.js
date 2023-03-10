@@ -39,33 +39,25 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 //     null,
 //     [flowSecundario]
 // )
-function createButtons(buttons) {
-  return buttons.map((button) => ({ body: button }));
-}          
-          
+      
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
 .addAnswer(`🙌 Hola, bienvenido a este *Chatbot*. Por favor, seleccione una opción.`, {
-    buttons: createButtons([
-      '1) opción',
-      '2) opción',
-      '3) opción',
-    ]),
-  });
-//  .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion',{
+ 
+  .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion',{
 
-//      buttons:[
-//{
- //   body:'1)opcion'
-//},
-//{
-//    body:'2)opcion'
-//},
-//{
-  //  body:'3)opcion'
-//}
-//]
-//})
+    buttons:[
+{
+   body:'1)opcion'
+},
+{
+   body:'2)opcion'
+},
+{
+    body:'3)opcion'
+}
+]
+})
 
 const main = async () => {
     const adapterDB = new MockAdapter()
