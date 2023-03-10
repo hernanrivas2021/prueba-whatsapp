@@ -3,7 +3,6 @@ const { createBot, createProvider, createFlow, addKeyword } = require('@bot-what
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
-
 const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
 // const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
@@ -40,6 +39,10 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 //     null,
 //     [flowSecundario]
 // )
+function createButtons(buttons) {
+  return buttons.map((button) => ({ body: button }));
+}          
+          
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
 .addAnswer(`🙌 Hola, bienvenido a este *Chatbot*. Por favor, seleccione una opción.`, {
