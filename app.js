@@ -19,7 +19,7 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 
 // const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
      [
-        '🙌 Aquí encontras un ejemplo rapido',
+      //  '🙌 Aquí encontras un ejemplo rapido',
 //         'https://bot-whatsapp.netlify.app/docs/example/',
 //         '\n*2* Para siguiente paso.',
 //     ],
