@@ -30,11 +30,8 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 
  const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
     [
-         '🚀 Puedes aportar tu granito de arena a este proyecto',
-        '[*opencollective*] https://opencollective.com/bot-whatsapp',
-         '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
-         '[*patreon*] https://www.patreon.com/leifermendez',
-         '\n*2* Para siguiente paso.',
+         '🚀 estoy cansado me tienen 24/7 respondiendo ',
+        
      ],
      null,
      null,
