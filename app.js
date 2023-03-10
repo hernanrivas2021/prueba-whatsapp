@@ -42,8 +42,7 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 // )
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion')
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion',{
+  .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion',{
 
     buttons:[
 {
