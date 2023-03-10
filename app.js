@@ -47,13 +47,13 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
 
     buttons:[
 {
-    body: '1)opcion'
+    body:'1)opcion'
 },
 {
-    body: '2)opcion'
+    body:'2)opcion'
 },
 {
-    body: '3)opcion'
+    body:'3)opcion'
 }
 ]
 })
