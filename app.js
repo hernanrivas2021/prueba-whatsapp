@@ -3,6 +3,7 @@ const { createBot, createProvider, createFlow, addKeyword } = require('@bot-what
 const QRPortalWeb = require('@bot-whatsapp/portal')
 const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
+
 const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí tenemos el flujo secundario'])
 
 // const flowDocs = addKeyword(['doc', 'documentacion', 'documentación']).addAnswer(
@@ -17,8 +18,8 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 // )
 
 // const flowTuto = addKeyword(['tutorial', 'tuto']).addAnswer(
-     [
-      //  '🙌 Aquí encontras un ejemplo rapido',
+//     [
+//         '🙌 Aquí encontras un ejemplo rapido',
 //         'https://bot-whatsapp.netlify.app/docs/example/',
 //         '\n*2* Para siguiente paso.',
 //     ],
@@ -27,31 +28,32 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 //     [flowSecundario]
 // )
 
- const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
-    [
-       '🚀matame por favor me tienen trajando 24/7 por ser un boot',
-       
-     ],
-     null,
-    null,
-     [flowSecundario]
- )
-      
+// const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
+//     [
+//         '🚀 Puedes aportar tu granito de arena a este proyecto',
+//         '[*opencollective*] https://opencollective.com/bot-whatsapp',
+//         '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
+//         '[*patreon*] https://www.patreon.com/leifermendez',
+//         '\n*2* Para siguiente paso.',
+//     ],
+//     null,
+//     null,
+//     [flowSecundario]
+// )
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-.addAnswer(`🙌 Hola, bienvenido a este *Chatbot*. Por favor, seleccione una opción.`, {
- 
-.addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion',{
+    .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion')
+    .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion',{
 
     buttons:[
 {
-   body:'1)opcion'
+    body: '1)opcion'
 },
 {
-   body:'2)opcion'
+    body: '2)opcion'
 },
 {
-    body:'3)opcion'
+    body: '3)opcion'
 }
 ]
 })
