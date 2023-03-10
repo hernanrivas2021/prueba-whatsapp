@@ -28,18 +28,18 @@ const flowSecundario = addKeyword(['2', 'siguiente']).addAnswer(['📄 Aquí ten
 //     [flowSecundario]
 // )
 
-// const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
-//     [
-//         '🚀 Puedes aportar tu granito de arena a este proyecto',
-//         '[*opencollective*] https://opencollective.com/bot-whatsapp',
-//         '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
-//         '[*patreon*] https://www.patreon.com/leifermendez',
-//         '\n*2* Para siguiente paso.',
-//     ],
-//     null,
-//     null,
-//     [flowSecundario]
-// )
+ const flowGracias = addKeyword(['gracias', 'grac']).addAnswer(
+    [
+         '🚀 Puedes aportar tu granito de arena a este proyecto',
+        '[*opencollective*] https://opencollective.com/bot-whatsapp',
+         '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
+         '[*patreon*] https://www.patreon.com/leifermendez',
+         '\n*2* Para siguiente paso.',
+     ],
+     null,
+     null,
+    
+  )
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
   .addAnswer('🙌 Hola bienvenido a este *Chatbot* Selecsiona una opcion',{
@@ -59,7 +59,7 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
 
 const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
+    const adapterFlow = createFlow([flowPrincipal,flowGracias])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({
